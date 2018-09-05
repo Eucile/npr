@@ -133,8 +133,14 @@ h6 {
   overflow: hidden;
   background-color: white;
   position: relative;
+  font-size: 20px;
+  text-align: right;
   #myLinks {
     display: none;
+  }
+  .fa-bars {
+    color: $nprDarkGray;
+  }
   h4 {
     color: black;
     padding: 14px 16px;
@@ -143,12 +149,11 @@ h6 {
     display: block;
   }
   h4.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
+    background: red;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
 
   }
 }
@@ -156,20 +161,29 @@ h6 {
 @media screen and (max-width: 1024px) {
   .mobile-nav {
     display: block;
+    margin-top: 20px;
+    margin-right: 20px;
   }
 }
 
 @media screen and (max-width: 1024px) {
   .header {
-    .logo {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+    height: 70px;
+    .header-content {
+      display: flex;
+      justify-content: center;
       clear: both;
+      width: 100%;
     }
     .nav {
       display: none;
     }
+    .icons {
+      display: none;
+    }
+  }
+  .main-content {
+    margin-top: 90px;
   }
 }
 

@@ -116,19 +116,24 @@ h6 {
   overflow: hidden;
   background-color: white;
   position: relative;
+  font-size: 20px;
+  text-align: right;
 }
 .mobile-nav #myLinks {
   display: none;
 }
-.mobile-nav #myLinks h4 {
+.mobile-nav .fa-bars {
+  color: #545960;
+}
+.mobile-nav h4 {
   color: black;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
   display: block;
 }
-.mobile-nav #myLinks h4.icon {
-  background: black;
+.mobile-nav h4.icon {
+  background: red;
   display: block;
   position: absolute;
   right: 0;
@@ -138,17 +143,29 @@ h6 {
 @media screen and (max-width: 1024px) {
   .mobile-nav {
     display: block;
+    margin-top: 20px;
+    margin-right: 20px;
   }
 }
 @media screen and (max-width: 1024px) {
-  .header .logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  .header {
+    height: 70px;
+  }
+  .header .header-content {
+    display: flex;
+    justify-content: center;
     clear: both;
+    width: 100%;
   }
   .header .nav {
     display: none;
+  }
+  .header .icons {
+    display: none;
+  }
+
+  .main-content {
+    margin-top: 90px;
   }
 }
 @media screen and (max-width: 990px) {
