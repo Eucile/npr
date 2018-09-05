@@ -1,4 +1,6 @@
 $nprgray: #f2f2f2;
+$centerWidth: 950px;
+$nprblue: #597eba;
 
 body {
   background-color: $nprgray;
@@ -7,21 +9,72 @@ body {
 .header {
   position: fixed;
   background-color: white;
-  height: 40px;
+  height: 125px;
+  width: 100%;
+  top: 0;
 
   .header-content {
-    width: 800px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: $centerWidth;
   }
 
   .logo {
     width: 145px;
+    margin-top: 10px;
+    float: left;
   }
 
   .nav {
     display: flex;
+    width: 620px;
+    justify-content: space-between;
+    color: $nprblue;
+    font: {
+      family: sans-serif;
+      size: 20px;
+    }
+    clear: both;
   }
 
   .icons {
     display: flex;
+    width: 250px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+    color: $nprblue;
+    font: {
+      family: sans-serif;
+      size: 15px;
+    }
+    float: right;
+  }
+}
+
+.main-content {
+  display: flex;
+  width: $centerWidth;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+
+  img {
+    width: 100%;
+  }
+
+  .multirow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .story {
+    background-color: white;
+    margin: 10px;
+  }
+  .smallstory {
+    flex-wrap: wrap;
   }
 }
