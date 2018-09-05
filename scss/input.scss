@@ -4,21 +4,24 @@ body {
   background-color: $nprgray;
 }
 
+.header {
+  position: fixed;
+  background-color: white;
+  height: 40px;
 
+  .header-content {
+    width: 800px;
+  }
 
+  .logo {
+    width: 145px;
+  }
 
-// .header {
-//   position: fixed;
-//  .header-content {
-//
-//   }
-//   .logo {
-//
-//   }
-//   .nav {
-//
-//   }
-//   .icons {
-//
-//   }
-// }
+  .nav {
+    display: flex;
+  }
+
+  .icons {
+    display: flex;
+  }
+}
