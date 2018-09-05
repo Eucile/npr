@@ -71,6 +71,7 @@ h6 {
   display: flex;
   flex-direction: column;
   background-color: white;
+  flex-wrap: wrap;
 }
 .main-content .largeStory {
   display: flex;
@@ -138,9 +139,35 @@ h6 {
   .mobile-nav {
     display: block;
   }
-
-  .nav {
+}
+@media screen and (max-width: 1024px) {
+  .header .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+  }
+  .header .nav {
     display: none;
+  }
+}
+@media screen and (max-width: 990px) {
+  .main-content {
+    width: auto;
+  }
+
+  #largeImage {
+    display: none;
+  }
+
+  .multirow {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .multirow .smallstory {
+    width: 100%;
   }
 }
 
