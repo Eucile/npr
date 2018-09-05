@@ -1,11 +1,13 @@
 body {
   background-color: #f2f2f2;
   font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 h2, h3, h4, h5, h6 {
   padding-left: 10px;
   padding-right: 10px;
+  font-family: "Montserrat", sans-serif;
 }
 
 h6 {
@@ -105,6 +107,41 @@ h6 {
 }
 .main-content .smallstory h3:hover {
   color: #597eba;
+}
+
+.mobile-nav {
+  display: none;
+  float: left;
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+}
+.mobile-nav #myLinks {
+  display: none;
+}
+.mobile-nav #myLinks h4 {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.mobile-nav #myLinks h4.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .mobile-nav {
+    display: block;
+  }
+
+  .nav {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */

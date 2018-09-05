@@ -6,11 +6,13 @@ $nprDarkGray: #545960;
 body {
   background-color: $nprgray;
   font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h2, h3, h4, h5, h6 {
   padding-left: 10px;
   padding-right: 10px;
+  font-family: 'Montserrat', sans-serif;
 }
 h6 {
   color: $nprDarkGray;
@@ -121,5 +123,41 @@ h6 {
     h3:hover {
       color: $nprblue;
     }
+  }
+}
+
+.mobile-nav {
+  display: none;
+  float: left;
+  overflow: hidden;
+  background-color: white;
+  position: relative;
+  #myLinks {
+    display: none;
+  h4 {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  h4.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+  }
+}
+
+
+@media screen and (max-width: 1024px) {
+  .mobile-nav {
+    display: block;
+  }
+  .nav {
+    display: none;
   }
 }
