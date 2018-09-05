@@ -1,9 +1,19 @@
 $nprgray: #f2f2f2;
 $centerWidth: 950px;
 $nprblue: #597eba;
+$nprDarkGray: #545960;
 
 body {
   background-color: $nprgray;
+  font-family: sans-serif;
+}
+
+h2, h3, h4, h5, h6 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+h6 {
+  color: $nprDarkGray;
 }
 
 .header {
@@ -55,26 +65,61 @@ body {
 
 .main-content {
   display: flex;
+  margin-top: 150px;
   width: $centerWidth;
   flex-direction: column;
   justify-content: space-between;
   margin-right: auto;
   margin-left: auto;
 
-  img {
-    width: 100%;
-  }
-
   .multirow {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
-  .story {
+
+  .flexLink {
+    display: flex;
+    flex-direction: column;
     background-color: white;
-    margin: 10px;
   }
+
+  .largeStory {
+    display: flex;
+    margin: 10px;
+    border-radius: 5px;
+    img {
+      width: 340px;
+    }
+    .storyText {
+      flex-direction: column;
+      height: auto;
+    }
+  }
+
+  .newslink {
+    padding-bottom: 10px;
+    a {
+    padding-left: 20px;
+    text-decoration: none;
+    color: black;
+    }
+    a:hover {
+      color: $nprblue;
+    }
+  }
+
   .smallstory {
-    flex-wrap: wrap;
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+    width: 32%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    h3:hover {
+      color: $nprblue;
+    }
   }
 }
