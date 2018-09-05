@@ -10,8 +10,8 @@ h2, h3, h4, h5, h6 {
   font-family: "Montserrat", sans-serif;
 }
 
-h6 {
-  color: #545960;
+h6, h5 {
+  color: #858c95;
 }
 
 .header {
@@ -71,15 +71,16 @@ h6 {
   display: flex;
   flex-direction: column;
   background-color: white;
+  border-radius: 10px;
   flex-wrap: wrap;
 }
 .main-content .largeStory {
   display: flex;
   margin: 10px;
-  border-radius: 5px;
 }
-.main-content .largeStory img {
+.main-content .largeStory #largeImage {
   width: 340px;
+  margin: 10px;
 }
 .main-content .largeStory .storyText {
   flex-direction: column;
